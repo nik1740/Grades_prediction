@@ -1,6 +1,6 @@
 # Students Grade Prediction Model
 
-This repository contains a machine learning model that predicts student grades based on the number of hours they studied. The model uses a simple linear regression technique to establish a relationship between the number of hours studied and the resulting grades.
+This repository contains a machine learning model that predicts student grades based on the number of hours they studied. The model uses a simple linear regression technique to establish a relationship between the number of hours studied and the resulting grades.I have used scikit-learn to train this model.
 
 ## Table of Contents
 
@@ -39,6 +39,7 @@ Split the Data: The data is split into training and testing sets.
 Train the Model: A linear regression model is trained on the training data.
 Make Predictions: The trained model makes predictions on the test data.
 Evaluate the Model: The model's performance is evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²).
+
 
 ## Visualization
 The script generates a scatter plot showing the correlation between the hours studied and the grades. The regression line is also plotted, showing the linear relationship established by the model.
