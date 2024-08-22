@@ -53,10 +53,11 @@ plt.xlabel('Hours Studied')
 plt.ylabel('Grades')
 plt.legend()
 plt.show()
+```
 ![Hours Studied vs. Grades](Screenshot 2024-08-22 231512.png)
 
 
-```
+
 ## Predicting New Data
 You can easily predict grades for new data points by modifying the new_hours variable in the script:
 ```python
