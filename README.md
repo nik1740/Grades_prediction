@@ -30,6 +30,26 @@ You can install the required packages using the following command:
 ```bash
 pip install numpy pandas matplotlib scikit-learn
 ```
+### Downloading the Model
+ Clone the repository:
+
+   ```bash
+   git clone  https://github.com/nik1740/Grades_prediction
+```
+### Load and use the pre-trained model:
+```python
+import pickle
+import numpy as np
+
+# Load the trained model
+with open('model.pkl', 'rb') as file:
+    model = pickle.load(file)
+
+# Predict new data
+new_hours = np.array([[9]])  # Example: Predicting for 9 hours studied
+predicted_grade = model.predict(new_hours)
+print(f"Predicted Grade for 9 hours of study: {predicted_grade[0]}")
+```
 ## Model Explanation
 The model is built using a linear regression algorithm provided by the scikit-learn library. It takes the number of hours studied as the input (independent variable) and predicts the corresponding grade (dependent variable).
 Steps in the Script:
