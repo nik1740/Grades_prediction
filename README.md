@@ -5,7 +5,6 @@ This repository contains a machine learning model that predicts student grades b
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
 - [Model Explanation](#model-explanation)
 - [Visualization](#visualization)
 - [Predicting New Data](#predicting-new-data)
@@ -30,5 +29,40 @@ You can install the required packages using the following command:
 
 ```bash
 pip install numpy pandas matplotlib scikit-learn
+```
+## Model Explanation
+The model is built using a linear regression algorithm provided by the scikit-learn library. It takes the number of hours studied as the input (independent variable) and predicts the corresponding grade (dependent variable).
+Steps in the Script:
+Load Data: The script reads the CSV file containing the dataset.
+Prepare Features and Target: The dataset is split into features (Hours_Studied) and target (Grades).
+Split the Data: The data is split into training and testing sets.
+Train the Model: A linear regression model is trained on the training data.
+Make Predictions: The trained model makes predictions on the test data.
+Evaluate the Model: The model's performance is evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²).
+
+## Visualization
+The script generates a scatter plot showing the correlation between the hours studied and the grades. The regression line is also plotted, showing the linear relationship established by the model.
+
+## To visualize the data:
+```bash
+plt.figure(figsize=(8, 6))
+plt.scatter(X, y, color='blue', label='Actual Data')
+plt.plot(X, model.predict(X), color='red', label='Regression Line')
+plt.title('Hours Studied vs. Grades')
+plt.xlabel('Hours Studied')
+plt.ylabel('Grades')
+plt.legend()
+plt.show()
+![Screenshot 2024-08-22 231512](https://github.com/user-attachments/assets/08e47b9f-9f8c-4ef9-a1d5-7ac02894a6d1)
+```
+## Predicting New Data
+You can easily predict grades for new data points by modifying the new_hours variable in the script:
+```bash
+new_hours = np.array([[9]])  # Example: Predicting for 9 hours studied
+predicted_score = model.predict(new_hours)
+print(f"Predicted Grade for 9 hours of study: {predicted_score[0]}")
+
+
+
 
 
