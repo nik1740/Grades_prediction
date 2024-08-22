@@ -53,6 +53,8 @@ plt.xlabel('Hours Studied')
 plt.ylabel('Grades')
 plt.legend()
 plt.show()
+![Alt text]()
+
 
 ```
 ## Predicting New Data
