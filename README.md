@@ -54,7 +54,7 @@ plt.ylabel('Grades')
 plt.legend()
 plt.show()
 ```
-![Hours Studied vs. Grades](Screenshot 2024-08-22 231512.png)
+![Hours Studied vs. Grades](graph.png)
 
 
 
