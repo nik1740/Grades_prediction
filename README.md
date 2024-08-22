@@ -1,4 +1,4 @@
-# Student Grades Prediction Model
+# Students Grade Prediction Model
 
 This repository contains a machine learning model that predicts student grades based on the number of hours they studied. The model uses a simple linear regression technique to establish a relationship between the number of hours studied and the resulting grades.
 
