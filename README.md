@@ -44,7 +44,7 @@ Evaluate the Model: The model's performance is evaluated using metrics such as M
 The script generates a scatter plot showing the correlation between the hours studied and the grades. The regression line is also plotted, showing the linear relationship established by the model.
 
 ## To visualize the data:
-```bash
+```python
 plt.figure(figsize=(8, 6))
 plt.scatter(X, y, color='blue', label='Actual Data')
 plt.plot(X, model.predict(X), color='red', label='Regression Line')
@@ -53,13 +53,13 @@ plt.xlabel('Hours Studied')
 plt.ylabel('Grades')
 plt.legend()
 plt.show()
-![Alt text]()
+![Hours Studied vs. Grades](Screenshot 2024-08-22 231512.png)
 
 
 ```
 ## Predicting New Data
 You can easily predict grades for new data points by modifying the new_hours variable in the script:
-```bash
+```python
 new_hours = np.array([[9]])  # Example: Predicting for 9 hours studied
 predicted_score = model.predict(new_hours)
 print(f"Predicted Grade for 9 hours of study: {predicted_score[0]}")
