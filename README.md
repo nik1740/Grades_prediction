@@ -51,13 +51,21 @@ predicted_grade = model.predict(new_hours)
 print(f"Predicted Grade for 9 hours of study: {predicted_grade[0]}")
 ```
 ## Model Explanation
+
 The model is built using a linear regression algorithm provided by the scikit-learn library. It takes the number of hours studied as the input (independent variable) and predicts the corresponding grade (dependent variable).
+
 Steps in the Script:
+
 Load Data: The script reads the CSV file containing the dataset.
+
 Prepare Features and Target: The dataset is split into features (Hours_Studied) and target (Grades).
+
 Split the Data: The data is split into training and testing sets.
+
 Train the Model: A linear regression model is trained on the training data.
+
 Make Predictions: The trained model makes predictions on the test data.
+
 Evaluate the Model: The model's performance is evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared (R²).
 
 
